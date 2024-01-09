@@ -181,6 +181,7 @@ GameObject:
   - component: {fileID: 5998757765620925542}
   - component: {fileID: 7388411671011157773}
   - component: {fileID: 6744513809683365106}
+  - component: {fileID: -1594902920003419112}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Untagged
@@ -276,7 +277,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.6
-  m_Speed: 3.5
+  m_Speed: 1.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -288,3 +289,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &-1594902920003419112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6064016140845858456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ba9414561c139a418050255dad8d923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingState: 0
+  roamingDistanceMax: 7
+  roamingDistanceMin: 3
+  roamingTimerMax: 2
