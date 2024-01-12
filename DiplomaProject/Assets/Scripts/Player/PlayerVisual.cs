@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerVisual : MonoBehaviour
 {
-    private Animator animator;
+/*    private Animator animator;
     private SpriteRenderer spriteRenderer;
 
     private const string IS_RUNNING = "IsRunning";
@@ -17,7 +17,7 @@ public class PlayerVisual : MonoBehaviour
 
     private void Update()
     {
-        animator.SetBool(IS_RUNNING, Player.Instance.IsRunning());
+        animator.SetBool(IS_RUNNING, PlayerController.Instance.IsRunning());
         AdjustPlayerFacingDirection();
     }
 
@@ -35,5 +35,5 @@ public class PlayerVisual : MonoBehaviour
         {
             spriteRenderer.flipX = false;
         }
-    }
+    }*/
 }
