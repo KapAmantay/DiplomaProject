@@ -239,6 +239,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  dashSpeed: 4
+  myTrailRenderer: {fileID: 1835086944}
 --- !u!50 &304265332
 Rigidbody2D:
   serializedVersion: 4
@@ -1729,7 +1731,7 @@ Transform:
   m_GameObject: {fileID: 1835086942}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1786,8 +1788,8 @@ TrailRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.0070114136
-        value: 0.37398338
+        time: 0.01051712
+        value: 0.28455162
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1795,22 +1797,13 @@ TrailRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.31977558
-        value: 0.21463409
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
         time: 0.9684432
         value: 0
-        inSlope: -1.4888482
-        outSlope: -1.4888482
+        inSlope: -0.55292016
+        outSlope: -0.55292016
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.20540544
+        inWeight: 0.19033642
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -1855,7 +1848,7 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_MaskInteraction: 0
   m_Autodestruct: 0
-  m_Emitting: 1
+  m_Emitting: 0
   m_ApplyActiveColorSpace: 1
 --- !u!1001 &1862933972
 PrefabInstance:
