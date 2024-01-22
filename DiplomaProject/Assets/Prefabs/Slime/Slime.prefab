@@ -332,6 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
+  deathVFXPrefab: {fileID: 3844620490284318764, guid: 5326b7df27bd99142bb4c597646bf089, type: 3}
 --- !u!95 &-5610725844338497750
 Animator:
   serializedVersion: 5
