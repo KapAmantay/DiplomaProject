@@ -105,21 +105,27 @@ public class Sword : MonoBehaviour
         Vector3 mousePos = Input.mousePosition;
         Vector3 playerScreenPoint = Camera.main.WorldToScreenPoint(playerController.transform.position);
 
+        var dir = mousePos - playerScreenPoint;
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 
         if (mousePos.x < playerScreenPoint.x)
         {
-            float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
-            /*Debug.Log("Left " + angle);*/
-            activeWeapon.transform.rotation = Quaternion.Euler(0, -180, angle);
+            activeWeapon.transform.rotation = Quaternion.Euler(0, -180, 180 - angle);
             weaponCollider.transform.rotation = Quaternion.Euler(0, -180, 0);
         }
         else
         {
-            float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
-            /*Debug.Log("Right " + angle);*/
             activeWeapon.transform.rotation = Quaternion.Euler(0, 0, angle);
             weaponCollider.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 
+    private void OnDrawGizmos()
+    {
+        if (playerController == null) return;
+        Vector3 mousePos = Input.mousePosition;
+        Vector3 globalMousePos = Camera.main.ScreenToWorldPoint(mousePos);
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(playerController.transform.position, globalMousePos);
+    }
 }
