@@ -119,13 +119,4 @@ public class Sword : MonoBehaviour
             weaponCollider.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
-
-    private void OnDrawGizmos()
-    {
-        if (playerController == null) return;
-        Vector3 mousePos = Input.mousePosition;
-        Vector3 globalMousePos = Camera.main.ScreenToWorldPoint(mousePos);
-        Gizmos.color = Color.red;
-        Gizmos.DrawLine(playerController.transform.position, globalMousePos);
-    }
 }
