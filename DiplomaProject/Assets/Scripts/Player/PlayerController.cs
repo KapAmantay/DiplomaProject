@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : Singleton<PlayerController>
 {
     public bool FacingLeft { get { return facingLeft; } set { facingLeft = value; } }
-    public static PlayerController Instance;
+    
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float dashSpeed = 4f;
     [SerializeField] private TrailRenderer myTrailRenderer;
@@ -20,9 +20,9 @@ public class PlayerController : MonoBehaviour
     private bool facingLeft = false;
     private bool isDashing = false;
 
-    private void Awake()
+    protected override void Awake()
     {
-        Instance = this;
+        base.Awake();
         playerControls = new PlayerInputActions();
         rb = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
