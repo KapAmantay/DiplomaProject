@@ -110,43 +110,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hero_Idle_0
+      name: Inventory_Sword_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 96
-        height: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60f2061186536b141a5897210b3eb3d2
-      internalID: -251228365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hero_Idle_1
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 96
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 217ac31ce68271d4492faa25c328f26c
-      internalID: -1666862180
+      spriteID: 40c33634e2144774a88014f007546900
+      internalID: 1404959880
       vertices: []
       indices: 
       edges: []
@@ -162,8 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Hero_Idle_0: -251228365
-      Hero_Idle_1: -1666862180
+      Inventory_Sword_0: 1404959880
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
