@@ -11,9 +11,11 @@ public class Sword : MonoBehaviour, IWeapon
     private Transform weaponCollider;
     private Animator myAnimator;
     private GameObject slashAnim;
+    private ActiveWeapon activeWeapon;
 
     private void Awake()
     {
+        activeWeapon = GetComponentInParent<ActiveWeapon>();
         myAnimator = GetComponent<Animator>();
  
     }

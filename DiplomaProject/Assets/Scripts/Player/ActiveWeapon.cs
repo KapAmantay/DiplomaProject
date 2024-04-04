@@ -20,14 +20,11 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
 
     private void OnEnable()
     {
-
         playerControls.Enable();
     }
 
-
     private void Start()
     {
-
         playerControls.Combat.Attack.started += _ => StartAttacking();
         playerControls.Combat.Attack.canceled += _ => StopAttacking();
     }
@@ -46,7 +43,6 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     {
         CurrentActiveWeapon = null;
     }
-
 
     public void ToggleIsAttacking(bool value)
     {
@@ -71,5 +67,5 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
             (CurrentActiveWeapon as IWeapon).Attack();
         }
     }
-
 }
+
