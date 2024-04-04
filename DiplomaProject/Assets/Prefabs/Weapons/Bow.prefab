@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9688d9ffcb81d54f8b06be6dda60117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponInfo: {fileID: 11400000, guid: e3f465f3658c45d44b3041b2cef93594, type: 2}
 --- !u!95 &3098460649388473864
 Animator:
   serializedVersion: 5
