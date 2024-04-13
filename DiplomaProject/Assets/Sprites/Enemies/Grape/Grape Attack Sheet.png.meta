@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2562a33eb6d2b4541a043aec5a13fee0
+guid: 92fd55171ed4651459850cae3592d35e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Meow-Knight_Idle_0
+      name: Grape Attack Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 127.75
-        width: 16
-        height: 18.25
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e30ee9898210a8645a3c4adef6916900
-      internalID: 1502204696
+      spriteID: 49375f5c506f36849a073f9a1c5d675f
+      internalID: 1272636821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Meow-Knight_Idle_1
+      name: Grape Attack Sheet_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 109.75
-        width: 16
-        height: 18.25
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a16675058944f0749bff5802e682df29
-      internalID: 202479953
+      spriteID: 0b9c201dec08c7a48b3f22c6230bd5c0
+      internalID: -21500108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Meow-Knight_Idle_2
+      name: Grape Attack Sheet_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 91.75
-        width: 16
-        height: 18.25
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbb4c15ec32778840b7138b40505965d
-      internalID: -1243010169
+      spriteID: a72fd969496cc0d4cb324c3e8004aefc
+      internalID: 1469910690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Meow-Knight_Idle_3
+      name: Grape Attack Sheet_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 73.75
-        width: 16
-        height: 18.25
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 467a385418d23e5489d279179f4f092d
-      internalID: -739551348
+      spriteID: d8d0ad74d408dcf43b3b1d7d76a4571b
+      internalID: -1103367908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Meow-Knight_Idle_4
+      name: Grape Attack Sheet_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 55.75
-        width: 16
-        height: 18.25
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db51eab1ea3266f4fa442d8672bcaea3
-      internalID: -559536077
+      spriteID: 0403f2a874dae274880a2adffca8d0e9
+      internalID: 2103876216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Meow-Knight_Idle_5
+      name: Grape Attack Sheet_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 37.75
-        width: 16
-        height: 18.25
+        x: 320
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,50 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efd2fd48af6f03d40af808590a9950ad
-      internalID: 1603335676
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Meow-Knight_Idle_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 19.75
-        width: 16
-        height: 18.25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3efc03c21fe7b244c9b1409ccbc80f5b
-      internalID: -2017072186
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Meow-Knight_Idle_7
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1.75
-        width: 16
-        height: 18.25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ba2578a3a7138041a3d62216abe6fe3
-      internalID: -261642905
+      spriteID: 18e8819d8e7aae8419da60fe4ce27b78
+      internalID: -1744126156
       vertices: []
       indices: 
       edges: []
@@ -288,14 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Meow-Knight_Idle_0: 1502204696
-      Meow-Knight_Idle_1: 202479953
-      Meow-Knight_Idle_2: -1243010169
-      Meow-Knight_Idle_3: -739551348
-      Meow-Knight_Idle_4: -559536077
-      Meow-Knight_Idle_5: 1603335676
-      Meow-Knight_Idle_6: -2017072186
-      Meow-Knight_Idle_7: -261642905
+      Grape Attack Sheet_0: 1272636821
+      Grape Attack Sheet_1: -21500108
+      Grape Attack Sheet_2: 1469910690
+      Grape Attack Sheet_3: -1103367908
+      Grape Attack Sheet_4: 2103876216
+      Grape Attack Sheet_5: -1744126156
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

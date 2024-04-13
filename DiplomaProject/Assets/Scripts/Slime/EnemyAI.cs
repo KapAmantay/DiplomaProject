@@ -5,68 +5,40 @@ using UnityEngine.AI;
 using PixelAdv.Utils;
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] private State startingState;
-    [SerializeField] private float roamingDistanceMax = 7f;
-    [SerializeField] private float roamingDistanceMin = 3f;
-    [SerializeField] private float roamingTimerMax = 2f;
-
-    private NavMeshAgent navMeshAgent;
-    private State state;
-    private float roamingTime;
-    private Vector3 roamingPosition;
-    private Vector3 staringPosition;
+    [SerializeField] private float roamChangeDirFloat = 2f;
 
     private enum State
     {
         Roaming
     }
 
+    private State state;
+    private EnemyPathfinding enemyPathfinding;
+
     private void Awake()
     {
-        navMeshAgent = GetComponent<NavMeshAgent>();
-        navMeshAgent.updateRotation = false;
-        navMeshAgent.updateUpAxis = false;
-        state = startingState;
+        enemyPathfinding = GetComponent<EnemyPathfinding>();
+        state = State.Roaming;
     }
 
-    private void Update()
+    private void Start()
     {
-        switch (state)
+        StartCoroutine(RoamingRoutine());
+    }
+
+    private IEnumerator RoamingRoutine()
+    {
+        while (state == State.Roaming)
         {
-            default:
-            case State.Roaming:
-                roamingTime -= Time.deltaTime;
-                if (roamingTime < 0)
-                {
-                    Roaming();
-                    roamingTime = roamingTimerMax;
-                }
-                break;
+            Vector2 roamPosition = GetRoamingPosition();
+            enemyPathfinding.MoveTo(roamPosition);
+            yield return new WaitForSeconds(roamChangeDirFloat);
         }
     }
 
-    private void Roaming()
+    private Vector2 GetRoamingPosition()
     {
-        staringPosition = transform.position;
-        roamingPosition = GetRoamingPosition();
-        ChangeFacingDirection(staringPosition, roamingPosition);
-        navMeshAgent.SetDestination(roamingPosition);
+        return new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
     }
 
-    private Vector3 GetRoamingPosition()
-    {
-        return staringPosition + Utils.GetRandomDir() * UnityEngine.Random.Range(roamingDistanceMin, roamingDistanceMax);
-    }
-
-    private void ChangeFacingDirection(Vector3 sourcePosition, Vector3 targetPosition) 
-    {
-        if (sourcePosition.x > targetPosition.x)
-        {
-            transform.rotation = Quaternion.Euler(0, -180, 0);
-        }
-        else
-        {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
-        }
-    }
 }
