@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3b215af50a343604cb6529aafbaa0c78
+guid: 58ec3cae53f11024e8fe4c29b5de8124
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,22 +110,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Grape Projectile_0
+      name: Hero_Idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 96
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39cd41c87bc19864fa12d0fd17578a44
-      internalID: -1121729326
+      spriteID: 60f2061186536b141a5897210b3eb3d2
+      internalID: -251228365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217ac31ce68271d4492faa25c328f26c
+      internalID: -1666862180
       vertices: []
       indices: 
       edges: []
@@ -141,7 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Grape Projectile_0: -1121729326
+      Hero_Idle_0: -251228365
+      Hero_Idle_1: -1666862180
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3b215af50a343604cb6529aafbaa0c78
+guid: ca3eeacc0c1cc5b47b2f6bf973094c5f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Grape Projectile_0
+      name: B_witch_take_damage_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 16
-        height: 16
+        y: 97
+        width: 32
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39cd41c87bc19864fa12d0fd17578a44
-      internalID: -1121729326
+      spriteID: bbf87a1109f20434f9df000120d05324
+      internalID: 1785068686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_witch_take_damage_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe644bd2f97b1d4dab378cc1d878ea6
+      internalID: -282630054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_witch_take_damage_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1d907c55a7ff746b57927f602588b7
+      internalID: -795892088
       vertices: []
       indices: 
       edges: []
@@ -141,7 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Grape Projectile_0: -1121729326
+      B_witch_take_damage_0: 1785068686
+      B_witch_take_damage_1: -282630054
+      B_witch_take_damage_2: -795892088
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
