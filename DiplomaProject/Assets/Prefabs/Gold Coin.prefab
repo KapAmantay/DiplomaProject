@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4573279096629971727
+--- !u!1 &208829599416250107
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4214600192682409700}
-  - component: {fileID: 1746525631746328309}
-  - component: {fileID: 3446270255072727049}
-  - component: {fileID: 4205638772549013599}
-  - component: {fileID: 6626919593538297527}
-  - component: {fileID: 6416987701365021398}
+  - component: {fileID: 5299400611263409667}
+  - component: {fileID: 7049523520534308797}
+  - component: {fileID: 3362928487760380292}
+  - component: {fileID: 2012894427037677726}
+  - component: {fileID: 9188920082801465268}
+  - component: {fileID: 4521087685121235786}
   m_Layer: 0
-  m_Name: Bush
+  m_Name: Gold Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4214600192682409700
+--- !u!4 &5299400611263409667
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4573279096629971727}
+  m_GameObject: {fileID: 208829599416250107}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5706406, y: -1.278678, z: 0}
+  m_LocalPosition: {x: 5.8589563, y: -4.350835, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1746525631746328309
+--- !u!212 &7049523520534308797
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4573279096629971727}
+  m_GameObject: {fileID: 208829599416250107}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -109048568, guid: 00dd50233f33184458cd79992c4eb0e9, type: 3}
+  m_Sprite: {fileID: 1704280993, guid: 671a0f592d6afc84bb0715ac282dc892, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -88,13 +88,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &3446270255072727049
+--- !u!95 &3362928487760380292
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208829599416250107}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3fd9984e71cacff42927cb02a9908fc9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!70 &2012894427037677726
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4573279096629971727}
+  m_GameObject: {fileID: 208829599416250107}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -117,51 +138,51 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000004492837, y: 0.37688655}
-  m_Size: {x: 1.0160401, y: 1.0160401}
-  m_Direction: 1
---- !u!114 &4205638772549013599
+  m_Offset: {x: -0.008620024, y: -0.004310131}
+  m_Size: {x: 0.4828, y: 0.5258999}
+  m_Direction: 0
+--- !u!50 &9188920082801465268
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208829599416250107}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &4521087685121235786
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4573279096629971727}
+  m_GameObject: {fileID: 208829599416250107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
+  m_Script: {fileID: 11500000, guid: b1143561141a56740b7a06cd06fc2732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Size: {x: 1.1413269, y: 1.0091385, z: 4}
-  m_Center: {x: 0, y: 0.34148425, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
---- !u!114 &6626919593538297527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4573279096629971727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d5b6c994ab7c244888397c240647f0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyVFX: {fileID: 5535042536537612010, guid: af37e40b7ce19ca41813f4cb88548437, type: 3}
---- !u!114 &6416987701365021398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4573279096629971727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7b0888c7e1878c4aabc87d428dff8f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goldCoinPrefab: {fileID: 208829599416250107, guid: 6a21dffcd3bd8d54eb45c3c2e341bb62, type: 3}
+  pickUpDistance: 5
+  accelartionRate: 2
+  moveSpeed: 3
