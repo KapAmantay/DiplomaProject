@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 49ee74a291da50845b7965863c1e31d6
+guid: e8ffc7c0b17a579438eeda8c487ad2b7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Grape Projectile Splatter_0
+      name: Stamina Globe_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f89e7297a820e87479b69068e4481883
-      internalID: -523798156
+      spriteID: cd757d604db0c154dba0004e07d6debd
+      internalID: -2071668975
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Grape Projectile Splatter_0: -523798156
+      Stamina Globe_0: -2071668975
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
