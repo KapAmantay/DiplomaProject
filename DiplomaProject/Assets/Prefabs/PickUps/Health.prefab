@@ -10,12 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5299400611263409667}
   - component: {fileID: 7049523520534308797}
-  - component: {fileID: 3362928487760380292}
   - component: {fileID: 2012894427037677726}
   - component: {fileID: 9188920082801465268}
   - component: {fileID: 4521087685121235786}
   m_Layer: 0
-  m_Name: Gold Coin
+  m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,7 +55,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: df89757e5800cf84db799ebef4cfe3a5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -77,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1704280993, guid: 671a0f592d6afc84bb0715ac282dc892, type: 3}
+  m_Sprite: {fileID: 86607380, guid: ebe7f2782506eb0458dcaa657bc74e16, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -88,27 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3362928487760380292
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 208829599416250107}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3fd9984e71cacff42927cb02a9908fc9, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!70 &2012894427037677726
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -183,6 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1143561141a56740b7a06cd06fc2732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpType: 2
   pickUpDistance: 4
   accelerationSpeed: 3
   moveSpeed: 4
