@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 522725582578506987}
   - component: {fileID: 8998836921794073371}
   - component: {fileID: 1271409397148275622}
+  - component: {fileID: 1834020959877564091}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -261,7 +262,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -795892088, guid: ca3eeacc0c1cc5b47b2f6bf973094c5f, type: 3}
+  m_Sprite: {fileID: -1098679073, guid: c5e3fcf42902b044d925c9fd96868043, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -351,9 +352,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 6093377043484854911, guid: a3aaebc84c61599459559c06eba1260a, type: 3}
   bulletMoveSpeed: 4
-  burstCount: 4
-  projectilesPerBurst: 6
-  angleSpread: 149
+  burstCount: 12
+  projectilesPerBurst: 14
+  angleSpread: 180
   startingDistance: 0.3
   timeBetweenBursts: 1
   restTime: 0.5
@@ -374,6 +375,27 @@ MonoBehaviour:
   goldCoinPrefab: {fileID: 208829599416250107, guid: 6a21dffcd3bd8d54eb45c3c2e341bb62, type: 3}
   healthGlobe: {fileID: 208829599416250107, guid: 58bdb5d5f204f5542a8bd2e9d2cd649a, type: 3}
   staminaGlobe: {fileID: 208829599416250107, guid: 90442618cabc9d1489e6636e2cd2fecc, type: 3}
+--- !u!95 &1834020959877564091
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3340730544096321188}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 60ba17d1e6c788743b30d66f7a367003, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3938044439679619638
 GameObject:
   m_ObjectHideFlags: 0
